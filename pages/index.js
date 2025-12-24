@@ -4,8 +4,8 @@ import Footer from '../components/Footer';
 import Certifications from '../components/Certifications';
 import About from '../components/About';
 import ProjectCard from '../components/ProjectCard';
-
 import projectsData from '../lib/projectsData';
+
 
 export default function Home({ projects }) {
   return (
@@ -17,7 +17,7 @@ export default function Home({ projects }) {
         <About />
         <Certifications />
 
-        {/* Projects */}
+        {/* Featured Projects */}
         <section className="py-16 px-6 md:px-12 lg:px-20">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
@@ -30,10 +30,9 @@ export default function Home({ projects }) {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {Array.isArray(projects) &&
-                projects.slice(0, 3).map((p) => (
-                  <ProjectCard key={p.id} project={p} />
-                ))}
+              {projects.slice(0, 3).map((p) => (
+                <ProjectCard key={p.id} project={p} />
+              ))}
             </div>
 
             <div className="mt-12 text-center">
@@ -79,7 +78,7 @@ export default function Home({ projects }) {
   );
 }
 
-/* ✅ Build-safe static props */
+/* ✅ STATIC + VERCEL SAFE */
 export async function getStaticProps() {
   return {
     props: {

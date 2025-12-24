@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import blogData from '../lib/blogData';
 
+
 export default function Blog({ posts }) {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-[#020b17] to-black">
@@ -11,21 +12,29 @@ export default function Blog({ posts }) {
         <div className="max-w-6xl mx-auto">
 
           {/* Header */}
-          <div className="mb-12">
+          <header className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white">
               Technical Blog
             </h1>
             <p className="text-muted mt-3 max-w-3xl">
               Practical insights on forecasting, machine learning, and analytics engineering.
             </p>
-          </div>
+          </header>
 
           {/* Posts */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((p) => (
               <article
                 key={p.id}
-                className="project-card p-6 rounded-xl border border-white/5 hover:border-[#E50914]/30 transition"
+                className="
+                  project-card
+                  p-6
+                  rounded-xl
+                  border
+                  border-white/5
+                  hover:border-[#E50914]/30
+                  transition
+                "
               >
                 <span className="text-xs uppercase tracking-wide text-[#E50914]">
                   {p.category}
@@ -35,7 +44,7 @@ export default function Blog({ posts }) {
                   {p.title}
                 </h3>
 
-                <p className="text-muted mt-3 text-sm">
+                <p className="text-muted mt-3 text-sm leading-relaxed">
                   {p.excerpt}
                 </p>
 
@@ -47,7 +56,7 @@ export default function Blog({ posts }) {
                 </a>
               </article>
             ))}
-          </div>
+          </section>
 
         </div>
       </main>
@@ -57,6 +66,7 @@ export default function Blog({ posts }) {
   );
 }
 
+/* ✅ STATIC + VERCEL SAFE */
 export async function getStaticProps() {
   return {
     props: {
