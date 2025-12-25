@@ -606,3 +606,30 @@ body {
     padding: 1.5rem;
   }
 }
+/* ===== HERO MOBILE FIX ===== */
+@media (max-width: 640px) {
+  .hero-full {
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .hero-right::before {
+    display: none; /* disable glow blob on mobile */
+  }
+
+  .hero-right img {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    animation: none;
+    transform: none;
+  }
+}

@@ -3,27 +3,44 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <nav className="site-nav">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-6">
-        
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          flex
+          items-center
+          justify-between
+          px-5
+          py-3
+        "
+      >
         {/* LEFT — Brand */}
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded bg-[#E50914] flex items-center justify-center font-bold text-white">
+        <div className="flex items-center gap-3 shrink-0">
+          <div className="h-9 w-9 rounded bg-[#E50914] flex items-center justify-center font-bold text-white">
             AP
           </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-semibold">Arnav Parashar</span>
-            <span className="brand-sub">Analytics & Data Science</span>
+
+          <div className="hidden sm:flex flex-col leading-tight">
+            <span className="font-semibold text-sm">
+              Arnav Parashar
+            </span>
+            <span className="brand-sub">
+              Analytics & Data Science
+            </span>
           </div>
         </div>
 
         {/* RIGHT — Navigation */}
-        <div className="flex gap-5 items-center">
-          <Link href="/" className="nav-link">Home</Link>
-          <Link href="/projects" className="nav-link">Projects</Link>
-          <Link href="/blog" className="nav-link">Blog</Link>
-          <Link href="/resume" className="nav-link">Resume</Link>
+        <div className="flex items-center gap-4">
+          {/* Desktop links */}
+          <div className="hidden md:flex items-center gap-5">
+            <Link href="/" className="nav-link">Home</Link>
+            <Link href="/projects" className="nav-link">Projects</Link>
+            <Link href="/blog" className="nav-link">Blog</Link>
+            <Link href="/resume" className="nav-link">Resume</Link>
+          </div>
 
-          {/* GitHub Icon */}
+          {/* GitHub */}
           <a
             href="https://github.com/Arnavparashar"
             target="_blank"
@@ -42,7 +59,8 @@ export default function NavBar() {
             </svg>
           </a>
 
-          <Link href="/contact" className="btn-primary">
+          {/* Contact CTA */}
+          <Link href="/contact" className="btn-primary text-sm">
             Contact
           </Link>
         </div>
