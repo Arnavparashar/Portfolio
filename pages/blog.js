@@ -1,62 +1,59 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import blogData from '../lib/blogData';
 
-
-export default function Blog({ posts }) {
+export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-black via-[#020b17] to-black">
       <NavBar />
 
       <main className="flex-grow pt-20 pb-20 px-6 md:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
 
           {/* Header */}
           <header className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white">
               Technical Blog
             </h1>
-            <p className="text-muted mt-3 max-w-3xl">
-              Practical insights on forecasting, machine learning, and analytics engineering.
+            <p className="text-muted mt-3">
+              Long-form writing on data science, finance, and analytics.
             </p>
           </header>
 
-          {/* Posts */}
-          <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((p) => (
-              <article
-                key={p.id}
-                className="
-                  project-card
-                  p-6
-                  rounded-xl
-                  border
-                  border-white/5
-                  hover:border-[#E50914]/30
-                  transition
-                "
-              >
-                <span className="text-xs uppercase tracking-wide text-[#E50914]">
-                  {p.category}
-                </span>
+          {/* SINGLE BLOG CARD */}
+          <article
+            className="
+              project-card
+              p-6
+              rounded-xl
+              border
+              border-white/5
+              hover:border-[#E50914]/30
+              transition
+            "
+          >
+            <span className="text-xs uppercase tracking-wide text-[#E50914]">
+              Finance · Optimization
+            </span>
 
-                <h3 className="text-xl font-semibold text-white mt-2">
-                  {p.title}
-                </h3>
+            <h3 className="text-2xl font-semibold text-white mt-3">
+              I Built a Portfolio Optimization Model from Scratch — Here’s What Surprised Me
+            </h3>
 
-                <p className="text-muted mt-3 text-sm leading-relaxed">
-                  {p.excerpt}
-                </p>
+            <p className="text-muted mt-4 leading-relaxed">
+              A deep dive into building a portfolio optimization model from first principles,
+              covering risk, returns, constraints, and real-world trade-offs that don’t show up
+              in textbooks.
+            </p>
 
-                <a
-                  href={`/blog/${p.slug}`}
-                  className="inline-block mt-4 text-sm font-medium text-[#E50914] hover:underline"
-                >
-                  Read Article →
-                </a>
-              </article>
-            ))}
-          </section>
+            <a
+              href="https://medium.com/@arnav.parashar2000/i-built-a-portfolio-optimization-model-from-scratch-heres-what-surprised-me-07605fffd57d"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-5 text-sm font-medium text-[#E50914] hover:underline"
+            >
+              Read on Medium →
+            </a>
+          </article>
 
         </div>
       </main>
