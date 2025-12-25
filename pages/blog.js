@@ -62,12 +62,3 @@ export default function Blog() {
     </div>
   );
 }
-
-/* ✅ STATIC + VERCEL SAFE */
-export async function getStaticProps() {
-  return {
-    props: {
-      posts: blogData,
-    },
-  };
-}
