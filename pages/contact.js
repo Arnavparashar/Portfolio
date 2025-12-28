@@ -37,8 +37,7 @@ export default function Contact() {
               Contact
             </h1>
             <p className="text-muted mt-3 max-w-xl">
-              Get in touch for collaborations, consulting, or analytics-focused
-              project discussions.
+              Currently open to full-time opportunities in forecasting, machine learning, and analytics.
             </p>
           </div>
 
@@ -47,16 +46,16 @@ export default function Contact() {
             {/* LEFT — Contact Info */}
             <div className="section-card">
               <h3 className="text-lg font-semibold">
-                Reach out
+                Full-Time Roles
               </h3>
 
               <p className="text-muted mt-2">
-                Prefer email? I typically respond within a few business days.
+                I'm actively seeking full-time positions and typically respond within 1-2 business days.
               </p>
 
               <div className="mt-6">
                 <div className="text-sm text-muted">
-                  Email
+                  Direct Email
                 </div>
                 <a
                   href="mailto:arnav.parashar2000@gmail.com"
@@ -67,7 +66,7 @@ export default function Contact() {
               </div>
 
               <div className="mt-4 text-sm text-muted">
-                Also available on{" "}
+                Connect on{" "}
                 <a
                   href="https://www.linkedin.com/in/arnav-parashar-920212240/"
                   target="_blank"
@@ -76,15 +75,21 @@ export default function Contact() {
                 >
                   LinkedIn
                 </a>
+                {" "}for professional inquiries
               </div>
 
               <div className="mt-8">
                 <h4 className="font-medium">
-                  Availability
+                  Current Focus
                 </h4>
                 <p className="text-muted mt-2">
-                  Open to short-term consulting, collaborations, and full-time
-                  roles related to forecasting, machine learning, and analytics.
+                  Seeking full-time roles in:
+                  <ul className="mt-2 ml-4 list-disc text-muted">
+                    <li>Time Series Forecasting</li>
+                    <li>Machine Learning Engineering</li>
+                    <li>Data Analytics & Business Intelligence</li>
+                    <li>Data Science & Statistical Modeling</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -92,11 +97,11 @@ export default function Contact() {
             {/* RIGHT — Form */}
             <div className="section-card">
               <h3 className="text-lg font-semibold">
-                Send a message
+                Job Opportunity Form
               </h3>
 
               <p className="text-muted mt-2">
-                Share a brief overview of your project or inquiry.
+                Please share details about the full-time position, including role, requirements, and company information.
               </p>
 
               <form
@@ -106,7 +111,7 @@ export default function Contact() {
               >
                 <div>
                   <label className="text-sm text-muted">
-                    Name
+                    Your Name
                   </label>
                   <input
                     required
@@ -114,7 +119,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setForm({ ...form, name: e.target.value })
                     }
-                    placeholder="Your name"
+                    placeholder="Recruiter / Hiring Manager name"
                     className="
                       mt-1
                       w-full
@@ -131,7 +136,7 @@ export default function Contact() {
 
                 <div>
                   <label className="text-sm text-muted">
-                    Email
+                    Work Email
                   </label>
                   <input
                     required
@@ -157,7 +162,7 @@ export default function Contact() {
 
                 <div>
                   <label className="text-sm text-muted">
-                    Message
+                    Job Details
                   </label>
                   <textarea
                     required
@@ -165,7 +170,13 @@ export default function Contact() {
                     onChange={(e) =>
                       setForm({ ...form, message: e.target.value })
                     }
-                    placeholder="Describe your project or inquiry"
+                    placeholder="Please include:
+• Job title & level
+• Company name
+• Key responsibilities
+• Required skills/technologies
+• Location (remote/onsite/hybrid)
+• Compensation range (if available)"
                     className="
                       mt-1
                       w-full
@@ -174,7 +185,7 @@ export default function Contact() {
                       bg-[#050f1f]
                       border
                       border-white/10
-                      h-36
+                      h-48
                       resize-none
                       focus:outline-none
                       focus:border-white/30
@@ -184,11 +195,11 @@ export default function Contact() {
 
                 <div className="pt-2 flex items-center justify-between">
                   <span className="text-xs text-muted">
-                    You’ll receive a reply to the email provided.
+                    I'll review and respond promptly.
                   </span>
 
                   <button type="submit" className="btn-primary">
-                    Send
+                    Submit Opportunity
                   </button>
                 </div>
 
@@ -198,7 +209,7 @@ export default function Contact() {
                   )}
                   {status === "sent" && (
                     <div className="text-white">
-                      Message sent — thanks for reaching out.
+                      Thank you! I'll review this opportunity and get back to you soon.
                     </div>
                   )}
                   {status === "error" && (
