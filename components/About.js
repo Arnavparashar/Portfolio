@@ -109,7 +109,7 @@ export default function About() {
                   <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
                       <h4 className="text-xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#E50914] group-hover:to-[#ff2d20] transition-all duration-300">
-                        Analytics & Insights Intern
+                        Product Developement Intern
                       </h4>
                       <span className="text-sm font-medium px-3 py-1 rounded-full bg-[#E50914]/10 text-[#ff2d20] border border-[#E50914]/20 group-hover:bg-[#E50914]/20 group-hover:border-[#E50914]/30 transition-all duration-300">
                         Jan 2026 – Jun 2026
@@ -120,9 +120,10 @@ export default function About() {
                     </div>
                     <ul className="space-y-3 text-[#a6b3c2]">
                       {[
-                        "Supported business teams through structured data analysis",
-                        "Worked with enterprise-scale datasets",
-                        "Translated insights into actionable recommendations"
+
+                    "Built and iterated on an enterprise Text-to-SQL platform for internal business users",
+                    "Fine-tuned and evaluated LLMs on organizational schemas and query patterns",
+                    "Deployed and integrated the system end-to-end on AWS with a production-facing UI"
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <svg className="w-1.5 h-1.5 text-[#ff2d20] mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8">
