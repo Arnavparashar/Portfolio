@@ -15,8 +15,7 @@ export default function Resume() {
           </h1>
 
           <p className="text-muted mt-4 max-w-xl mx-auto">
-            A concise overview of my experience in analytics, machine learning,
-            forecasting, and building end-to-end data products.
+            A concise overview of my experience in building end-to-end data & Gen AI products.
           </p>
 
           {/* Resume Card */}
@@ -43,7 +42,7 @@ export default function Resume() {
 
             <div className="mt-6 flex justify-center gap-4">
               <a
-                href="https://drive.google.com/file/d/1D3twjC1E04g4OjdTkHhjXhtwwO_A0m2h/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1GzHQ9uWKsvVUwljpnoStHJ-qZZIVXS54/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary"
@@ -52,7 +51,7 @@ export default function Resume() {
               </a>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=1D3twjC1E04g4OjdTkHhjXhtwwO_A0m2h"
+                href="https://drive.google.com/file/d/1GzHQ9uWKsvVUwljpnoStHJ-qZZIVXS54/view?usp=drive_link"
                 className="btn-ghost"
               >
                 Download PDF

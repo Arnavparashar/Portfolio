@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Arnav Parashar | Analytics & Data Science</title>
+        <title>Arnav Parashar | GenAI & AI Systems Engineer</title>
         <meta name="description" content="I build data products using analytics, ML, and forecasting. I’m Arnav Parashar — an Analytics & Data Science professional focused on forecasting, machine learning, and building end-to-end data products using real-world datasets." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

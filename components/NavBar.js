@@ -15,7 +15,7 @@ export default function NavBar() {
           </div>
           <div className="leading-tight">
             <div className="font-semibold">Arnav Parashar</div>
-            <div className="text-xs text-muted">Analytics & Data Science</div>
+            <div className="text-xs text-muted">GenAI & AI Systems Engineer</div>
           </div>
         </div>
 

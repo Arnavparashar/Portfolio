@@ -30,7 +30,7 @@ export default function Hero() {
               leading-tight
             "
           >
-            I build data products using analytics, ML, and forecasting.
+            I build AI systems — from machine learning models to production GenAI pipelines.
           </h1>
 
           <p
@@ -41,9 +41,7 @@ export default function Hero() {
               sm:text-lg
             "
           >
-            I’m Arnav Parashar — an Analytics & Data Science professional focused
-            on forecasting, machine learning, and building end-to-end data
-            products using real-world datasets.
+            I'm Arnav Parashar — a GenAI engineer and incoming Technology Consultant at EY, focused on building production-grade AI systems, multi-agent pipelines, and data-driven solutions for enterprise environments.
           </p>
         </div>
 
@@ -81,7 +79,7 @@ export default function Hero() {
               Arnav Parashar
             </div>
             <div className="text-sm text-muted">
-              Analytics & Data Science
+              GenAI & AI Systems Engineer
             </div>
           </div>
         </div>

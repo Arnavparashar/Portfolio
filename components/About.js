@@ -19,8 +19,8 @@ export default function About() {
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E50914] to-[#ff2d20]">Me</span>
           </h2>
           <p className="text-lg text-[#a6b3c2] max-w-3xl">
-            Data scientist specializing in transforming complex data into strategic insights 
-            through advanced analytics and machine learning.
+            GenAI engineer and incoming Technology Consultant at EY, specializing in building 
+            production AI systems, multi-agent pipelines, and agentic solutions for enterprise environments.
           </p>
         </div>
 
@@ -33,13 +33,13 @@ export default function About() {
               <h3 className="text-2xl font-semibold text-white mb-6">Overview</h3>
               <div className="space-y-6 text-[#a6b3c2]">
                 <p className="text-lg leading-relaxed">
-                  With a strong foundation in <span className="text-white font-medium bg-gradient-to-r from-[#E50914] to-[#ff2d20] bg-clip-text text-transparent">mathematics, analytical reasoning, and technology</span>, 
-                  I focus on applying data-driven approaches to solve complex business challenges.
+                  With a strong foundation in <span className="text-white font-medium bg-gradient-to-r from-[#E50914] to-[#ff2d20] bg-clip-text text-transparent">large language models, agentic AI, and cloud infrastructure</span>, 
+                  I focus on building production-grade AI systems that solve real enterprise problems.
                 </p>
                 <p className="leading-relaxed">
                   I hold a <span className="text-white font-medium">B.Tech in Information Technology</span> from 
-                  <span className="text-[#ff2d20] font-medium"> VIT Vellore</span>, with expertise in analytics, 
-                  machine learning, forecasting, and data product development.
+                  <span className="text-[#ff2d20] font-medium"> VIT Vellore</span>, with hands-on experience in 
+                  GenAI engineering, RAG pipelines, NL-to-SQL systems, and AWS cloud deployments.
                 </p>
               </div>
               
@@ -63,7 +63,84 @@ export default function About() {
               <div className="relative pl-10 space-y-12">
                 {/* Timeline line */}
                 <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#E50914]/20 via-[#ff2d20]/30 to-transparent"></div>
-                
+                {/* EY Experience */}
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-[#E50914] to-[#ff2d20] border-4 border-[#020b17]"></div>
+                  <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                      <h4 className="text-xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#E50914] group-hover:to-[#ff2d20] transition-all duration-300">
+                        Senior Analyst – Technology Consulting
+                      </h4>
+                      <span className="text-sm font-medium px-3 py-1 rounded-full bg-[#E50914]/10 text-[#ff2d20] border border-[#E50914]/20 group-hover:bg-[#E50914]/20 group-hover:border-[#E50914]/30 transition-all duration-300">
+                        Jul 2026 – Present
+                      </span>
+                    </div>
+                    <div className="mb-3">
+                      <span className="text-[#a6b3c2]">EY India</span>
+                    </div>
+                    <ul className="space-y-3 text-[#a6b3c2]">
+                      {[
+                        "Designing and building Agentic SOC systems that leverage AI agents for autonomous threat detection, triage, and incident response across enterprise environments.",
+                        "Architecting multi-agent orchestration pipelines integrating LLMs with security tooling to reduce analyst workload and accelerate mean time to respond (MTTR).",
+                        "Consulting with clients on AI-driven cybersecurity strategy, aligning agentic automation frameworks with enterprise security operations and compliance requirements."
+                      ].map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <svg className="w-1.5 h-1.5 text-[#ff2d20] mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="4" />
+                          </svg>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Company icon */}
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                      <svg className="w-8 h-8 text-[#ff2d20]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Titan Experience */}
+                <div className="relative">
+                  <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-[#E50914] to-[#ff2d20] border-4 border-[#020b17]"></div>
+                  <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                      <h4 className="text-xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#E50914] group-hover:to-[#ff2d20] transition-all duration-300">
+                        Gen AI Intern
+                      </h4>
+                      <span className="text-sm font-medium px-3 py-1 rounded-full bg-[#E50914]/10 text-[#ff2d20] border border-[#E50914]/20 group-hover:bg-[#E50914]/20 group-hover:border-[#E50914]/30 transition-all duration-300">
+                        Jan 2026 – Jun 2026
+                      </span>
+                    </div>
+                    <div className="mb-3">
+                      <span className="text-[#a6b3c2]">Titan Company Limited (Tanishq)</span>
+                    </div>
+                    <ul className="space-y-3 text-[#a6b3c2]">
+                      {[
+                        "Built and enhanced an enterprise-grade NL-to-SQL platform for Tanishq business users, enabling natural language access to enterprise data.",
+                        "Developed a RAG-based multi-agent system leveraging organizational schemas and historical query patterns to improve SQL generation accuracy.",
+                        "Deployed and integrated the end-to-end solution on AWS with a production-ready UI and scalable backend infrastructure."
+                      ].map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <svg className="w-1.5 h-1.5 text-[#ff2d20] mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8">
+                            <circle cx="4" cy="4" r="4" />
+                          </svg>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Company icon */}
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                      <svg className="w-8 h-8 text-[#ff2d20]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
                 {/* SlashCurate Experience */}
                 <div className="relative">
                   <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-[#E50914] to-[#ff2d20] border-4 border-[#020b17]"></div>
@@ -92,48 +169,7 @@ export default function About() {
                           <span>{item}</span>
                         </li>
                       ))}
-                    </ul>
-                    
-                    {/* Company icon */}
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-10 transition-opacity duration-300">
-                      <svg className="w-8 h-8 text-[#ff2d20]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Titan Experience */}
-                <div className="relative">
-                  <div className="absolute -left-10 top-0 w-4 h-4 rounded-full bg-gradient-to-r from-[#E50914] to-[#ff2d20] border-4 border-[#020b17]"></div>
-                  <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-                      <h4 className="text-xl font-semibold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#E50914] group-hover:to-[#ff2d20] transition-all duration-300">
-                        Product Developement Intern
-                      </h4>
-                      <span className="text-sm font-medium px-3 py-1 rounded-full bg-[#E50914]/10 text-[#ff2d20] border border-[#E50914]/20 group-hover:bg-[#E50914]/20 group-hover:border-[#E50914]/30 transition-all duration-300">
-                        Jan 2026 – Jun 2026
-                      </span>
-                    </div>
-                    <div className="mb-3">
-                      <span className="text-[#a6b3c2]">Titan Company Limited</span>
-                    </div>
-                    <ul className="space-y-3 text-[#a6b3c2]">
-                      {[
-
-                    "Built and iterated on an enterprise Text-to-SQL platform for internal business users",
-                    "Fine-tuned and evaluated LLMs on organizational schemas and query patterns",
-                    "Deployed and integrated the system end-to-end on AWS with a production-facing UI"
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <svg className="w-1.5 h-1.5 text-[#ff2d20] mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8">
-                            <circle cx="4" cy="4" r="4" />
-                          </svg>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
+                    </ul>                    
                     {/* Company icon */}
                     <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-10 transition-opacity duration-300">
                       <svg className="w-8 h-8 text-[#ff2d20]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,9 +190,9 @@ export default function About() {
               <h3 className="text-2xl font-semibold text-white mb-6">Expertise</h3>
               <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
                 <p className="text-[#a6b3c2] leading-relaxed">
-                  I orchestrate the complete data lifecycle — translating business problems into 
-                  structured analyses, building predictive models, and delivering actionable insights 
-                  through intuitive dashboards and data products.
+                  I design and ship end-to-end AI systems — from architecting multi-agent pipelines 
+                  and RAG-based retrieval systems to deploying production applications on AWS with 
+                  scalable, enterprise-ready infrastructure.
                 </p>
                 
                 {/* Decorative icon */}
@@ -174,18 +210,18 @@ export default function About() {
               <div className="project-card group relative p-6 rounded-xl border border-[rgba(255,255,255,0.08)] hover:border-[#E50914]/30 transition-all duration-300">
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
-                    "Data Analysis & Visualization",
-                    "Machine Learning Algorithms",
-                    "Feature Engineering",
-                    "Predictive Modeling",
-                    "SQL & Python Development",
-                    "Statistical Analysis",
-                    "Model Evaluation & Validation",
-                    "Dashboarding & Reporting",
-                    "Data Pipeline Development",
-                    "Business Intelligence",
-                    "Forecasting Techniques",
-                    "Cloud Platforms"
+                      "Generative AI & LLMs",
+                      "Machine Learning",
+                      "RAG Pipelines",
+                      "Predictive Modeling",
+                      "Multi-Agent Systems",
+                      "Feature Engineering",
+                      "NL-to-SQL Engineering",
+                      "Time-Series Forecasting",
+                      "AWS Cloud Deployment",
+                      "Data Analysis & EDA",
+                      "Python & SQL",
+                      "Business Intelligence"
                   ].map((skill, index) => (
                     <li key={index} className="flex items-start gap-3 group/item hover:translate-x-1 transition-transform duration-200">
                       <svg className="w-2.5 h-2.5 text-[#ff2d20] mt-1.5 flex-shrink-0 group-hover/item:scale-125 transition-transform" fill="currentColor" viewBox="0 0 8 8">
@@ -201,8 +237,8 @@ export default function About() {
                 {/* Additional info */}
                 <div className="mt-6 pt-6 border-t border-[rgba(255,255,255,0.05)]">
                   <p className="text-xs text-[#a6b3c2]/70">
-                    Proficient in Python libraries (Pandas, NumPy, Scikit-learn), SQL databases, 
-                    visualization tools, and cloud platforms for end-to-end data solutions.
+                    Proficient in Python, Langchain, LangGraph, 
+                    Azure OpenAI, SQL databases, and AWS for both ML and GenAI system development.
                   </p>
                 </div>
                 
@@ -215,15 +251,15 @@ export default function About() {
               </div>
             </div>
 
-            {/* Current Focus */}
-            <div>
-              <h3 className="text-2xl font-semibold text-white mb-6">Current Focus</h3>
-              <div className="bg-gradient-to-br from-[#050f1f]/60 via-[#E50914]/10 to-[#050f1f]/60 backdrop-blur-sm rounded-xl p-6 border border-[#E50914]/30 group hover:border-[#E50914]/50 transition-all duration-300">
-                <p className="text-[#a6b3c2] leading-relaxed">
-                  Enhancing expertise in Python, SQL, and advanced analytics, 
-                  while seeking roles that bridge data science with strategic 
-                  business impact and measurable outcomes.
-                </p>
+         {/* Current Focus */}
+        <div>
+          <h3 className="text-2xl font-semibold text-white mb-6">Current Focus</h3>
+          <div className="bg-gradient-to-br from-[#050f1f]/60 via-[#E50914]/10 to-[#050f1f]/60 backdrop-blur-sm rounded-xl p-6 border border-[#E50914]/30 group hover:border-[#E50914]/50 transition-all duration-300">
+            <p className="text-[#a6b3c2] leading-relaxed">
+              Starting at EY as a Technology Consultant, building Agentic SOC systems 
+              at the intersection of AI and cybersecurity — while continuing to grow 
+              across ML, GenAI, and enterprise data engineering.
+            </p>
                 
                 {/* Decorative icon */}
                 <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
@@ -237,7 +273,7 @@ export default function About() {
             {/* Resume CTA */}
             <div className="pt-8">
               <a
-                href="https://drive.google.com/file/d/1D3twjC1E04g4OjdTkHhjXhtwwO_A0m2h/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1GzHQ9uWKsvVUwljpnoStHJ-qZZIVXS54/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary group relative inline-flex items-center justify-center gap-3 px-8 py-4 w-full text-white font-semibold rounded-xl transition-all duration-300 hover:scale-[1.02]"
@@ -249,7 +285,7 @@ export default function About() {
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#E50914] to-[#ff2d20] opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300"></div>
               </a>
               <p className="text-sm text-[#a6b3c2]/70 text-center mt-4">
-                PDF Format • Updated Regularly • Includes Projects & Case Studies
+                PDF Format • Updated Regularly • Includes Projects & relevant details
               </p>
             </div>
           </div>
