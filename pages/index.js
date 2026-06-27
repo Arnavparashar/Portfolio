@@ -5,6 +5,7 @@ import Certifications from '../components/Certifications';
 import About from '../components/About';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../lib/projectsData';
+import Recommendations from '../components/Recommendations';
 
 
 export default function Home({ projects }) {
@@ -15,6 +16,7 @@ export default function Home({ projects }) {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Recommendations />
         <Certifications />
 
         {/* Featured Projects */}
