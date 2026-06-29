@@ -80,9 +80,9 @@ export default function About() {
                     </div>
                     <ul className="space-y-3 text-[#a6b3c2]">
                       {[
-                        "Designing and building Agentic SOC systems that leverage AI agents for autonomous threat detection, triage, and incident response across enterprise environments.",
-                        "Architecting multi-agent orchestration pipelines integrating LLMs with security tooling to reduce analyst workload and accelerate mean time to respond (MTTR).",
-                        "Consulting with clients on AI-driven cybersecurity strategy, aligning agentic automation frameworks with enterprise security operations and compliance requirements."
+                      "Building Agentic SOC systems for autonomous threat detection and incident response.",
+                      "Designing multi-agent LLM pipelines integrated with enterprise security tooling.",
+                      "Advising clients on AI-driven cybersecurity strategy and agentic automation frameworks."
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <svg className="w-1.5 h-1.5 text-[#ff2d20] mt-2 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8">
